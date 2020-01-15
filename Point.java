@@ -15,11 +15,8 @@ public class Point{
         return y;
     }
 
-    public double getDistance(Point pointB) {
-        double distance;
-        distance = Math.abs(Math.sqrt((pointB.getX() - x) * (pointB.getX() - x) 
+    public double distance(Point pointB) {
+        return Math.abs(Math.sqrt((pointB.getX() - x) * (pointB.getX() - x) 
         + (pointB.getY() - y) * (pointB.getY() - y)));
-
-        return distance;
     }
 }
