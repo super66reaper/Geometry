@@ -7,18 +7,18 @@ public class Point{
         this.y = y;
     }
 
-    public double GetX() {
+    public double getX() {
         return x;
     }
 
-    public double GetY() {
+    public double getY() {
         return y;
     }
 
-    public double GetDistance(Point pointB) {
+    public double getDistance(Point pointB) {
         double distance;
-        distance = Math.abs(Math.sqrt((pointB.GetX() - x) * (pointB.GetX() - x) 
-        + (pointB.GetY() - y) * (pointB.GetY() - y)));
+        distance = Math.abs(Math.sqrt((pointB.getX() - x) * (pointB.getX() - x) 
+        + (pointB.getY() - y) * (pointB.getY() - y)));
 
         return distance;
     }
