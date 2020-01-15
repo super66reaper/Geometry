@@ -14,7 +14,7 @@ public class Triangle{
         double base;
         double height;
         base = pointA.getDistance(pointB);
-        height = pointA.getY() - pointC.getY;
+        height = pointA.getY() - pointC.getY();
         area = Math.abs((base * height) / 2);
         return area;
     }
