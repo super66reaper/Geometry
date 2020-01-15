@@ -1,26 +1,24 @@
 public class Point{
-    private Vetor2 position;
+    private double x;
+    private double y;
 
     public Point(double x, double y) {
-        position = new Vector2(x, y);
-    }
-
-    public Vector2 GetPosition() {
-        return position;
+        this.x = x;
+        this.y = y;
     }
 
     public double GetX() {
-        return position.x;
+        return x;
     }
 
     public double GetY() {
-        return position.y;
+        return y;
     }
 
     public double GetDistance(Point pointB) {
         double distance;
-        distance = Math.abs(Math.sqrt((pointB.GetX() - position.x) * (pointB.GetX() - position.x) 
-        + (pointB.GetY() - position.y) * (pointB.GetY() - position.y)));
+        distance = Math.abs(Math.sqrt((pointB.GetX() - x) * (pointB.GetX() - x) 
+        + (pointB.GetY() - y) * (pointB.GetY() - y)));
 
         return distance;
     }
